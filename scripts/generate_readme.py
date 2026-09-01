@@ -8,6 +8,15 @@ README_FILE = Path("README.md")
 START_MARKER = "<!-- APP_LIST_START -->"
 END_MARKER = "<!-- APP_LIST_END -->"
 
+LINK_NAMES = {
+    "android": "安卓下载",
+    "ios": "iOS下载",
+    "windows": "Windows下载",
+    "macos": "macOS下载",
+    "linux": "Linux下载",
+    "source": "开源地址",
+}
+
 
 def generate_app_list(data):
     lines = []
@@ -25,7 +34,8 @@ def generate_app_list(data):
             if description:
                 line += f" 【{description}】"
 
-            for link_name, url in app.get("links", {}).items():
+            for link_type, url in app.get("links", {}).items():
+                link_name = LINK_NAMES.get(link_type, link_type)
                 line += f" [{link_name}]({url})"
 
             lines.append(line)
