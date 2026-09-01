@@ -2,21 +2,21 @@
   "Videos": [
     {
       "name": "小黄果",
-      "description": "ai短剧、漫剧、真人剧等",
+      "description": "短剧app，包含ai短剧、漫剧、真人剧等类型",
       "links": {
         "android": "https://codeberg.org/pancloud/apk/raw/branch/main/huangguoai.apk"
       }
     },
     {
       "name": "云影视",
-      "description": "各大网盘超清视频资源，绕过会员网速限制，需要登录自己的网盘账号",
+      "description": "在线视频app，涵盖各大网盘超清视频资源，绕过会员网速限制，需要登录自己的网盘账号",
       "links": {
         "android": "https://codeberg.org/pancloud/apk/raw/branch/main/%E4%BA%91%E5%BD%B1%E8%A7%86.apk"
       }
     },
     {
       "name": "yoyo",
-      "description": "聚合视频app，在开源库基础上增加了原生播放器，支持自行配置播放资源",
+      "description": "聚合视频app，在开源库基础上增加了原生播放器和广告过滤，支持自行配置播放资源",
       "links": {
         "source": "https://github.com/DK3369/movie",
         "android": "https://www.pgyer.com/Mj9vBT8g"
