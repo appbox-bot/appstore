@@ -1,5 +1,5 @@
 {
-  "videos": [
+  "Videos": [
     {
       "name": "小黄果",
       "description": "ai短剧、漫剧、真人剧等",
@@ -20,6 +20,15 @@
       "links": {
         "开源地址": "https://github.com/DK3369/movie",
         "安卓下载地址": "https://www.pgyer.com/Mj9vBT8g"
+      }
+    }
+  ],
+  "Images": [
+    {
+      "name": "ACG HD",
+      "description": "二次元壁纸聚合app，涵盖了外网主流站点图片",
+      "links": {
+        "安卓下载地址": "https://www.pgyer.com/RNxAzEK2"
       }
     }
   ]
