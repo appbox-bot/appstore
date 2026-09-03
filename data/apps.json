@@ -8,6 +8,13 @@
       }
     },
     {
+      "name": "蜜桃圈",
+      "description": "外网福利视频合集app，onlyfans、twitter等",
+      "links": {
+        "android": "https://codeberg.org/pancloud/apk/raw/branch/main/peachporn.apk"
+      }
+    },
+    {
       "name": "云影视",
       "description": "在线视频app，涵盖各大网盘超清视频资源，绕过会员网速限制，需要登录自己的网盘账号",
       "links": {
