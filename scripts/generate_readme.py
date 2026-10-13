@@ -17,6 +17,21 @@ LINK_NAMES = {
     "source": "Source",
 }
 
+# 表格中显示的平台顺序
+PLATFORM_ORDER = [
+    "android",
+    "ios",
+    "windows",
+    "macos",
+    "linux",
+    "source",
+]
+
+
+def escape_markdown(text):
+    """转义 Markdown 表格中的特殊字符。"""
+    return str(text).replace("|", r"\|").replace("\n", "<br>")
+
 
 def generate_app_list(data):
     lines = []
@@ -25,21 +40,65 @@ def generate_app_list(data):
         lines.append(f"## {category}")
         lines.append("")
 
+        # 表头
+        headers = [
+            "序号",
+            "应用名称",
+            "预览图",
+            *[LINK_NAMES[key] for key in PLATFORM_ORDER],
+            "描述",
+        ]
+
+        lines.append("| " + " | ".join(headers) + " |")
+        lines.append("| " + " | ".join(["---"] * len(headers)) + " |")
+
         for index, app in enumerate(apps, 1):
-            name = app["name"]
-            description = app.get("description", "")
+            name = escape_markdown(app.get("name", ""))
+            description = escape_markdown(
+                app.get("description", "")
+            )
 
-            line = f"{index}、{name}"
+            # 预览图：支持 preview 字段
+            preview = app.get("preview", "")
+            if preview:
+                preview = f"![预览图]({preview})"
+            else:
+                preview = "-"
 
-            for link_type, url in app.get("links", {}).items():
-                link_name = LINK_NAMES.get(link_type, link_type)
-                line += f"　[{link_name}]({url})"
+            # 平台链接
+            links = app.get("links", {})
+            platform_links = []
 
-            if description:
-                line += f"\n\n{description}"
+            for link_type in PLATFORM_ORDER:
+                url = links.get(link_type)
 
-            lines.append(line)
-            lines.append("")
+                if url:
+                    link_name = LINK_NAMES[link_type]
+                    platform_links.append(
+                        f"[{link_name}]({url})"
+                    )
+                else:
+                    platform_links.append("-")
+
+            row = [
+                str(index),
+                name,
+                preview,
+                *platform_links,
+                description or "-",
+            ]
+
+            # 避免单元格中的 | 破坏表格结构
+            row = [
+                escape_markdown(value)
+                if value != preview
+                else value
+                for value in row
+            ]
+
+            lines.append("| " + " | ".join(row) + " |")
+
+        lines.append("")
 
     return "\n".join(lines).rstrip()
 
@@ -77,7 +136,7 @@ def main():
 
     README_FILE.write_text(
         new_readme,
-        encoding="utf-8"
+        encoding="utf-8",
     )
 
     print("README.md generated successfully.")
