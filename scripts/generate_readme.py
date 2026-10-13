@@ -17,16 +17,6 @@ LINK_NAMES = {
     "source": "Source",
 }
 
-# 表格中显示的平台顺序
-PLATFORM_ORDER = [
-    "android",
-    "ios",
-    "windows",
-    "macos",
-    "linux",
-    "source",
-]
-
 
 def escape_markdown(text):
     """转义 Markdown 表格中的特殊字符。"""
@@ -41,60 +31,44 @@ def generate_app_list(data):
         lines.append("")
 
         # 表头
-        headers = [
-            "序号",
-            "应用名称",
-            "预览图",
-            *[LINK_NAMES[key] for key in PLATFORM_ORDER],
-            "描述",
-        ]
-
-        lines.append("| " + " | ".join(headers) + " |")
-        lines.append("| " + " | ".join(["---"] * len(headers)) + " |")
+        lines.append("| 序号 | 应用名称 | 预览图 | 下载地址 | 描述 |")
+        lines.append("| --- | --- | --- | --- | --- |")
 
         for index, app in enumerate(apps, 1):
             name = escape_markdown(app.get("name", ""))
-            description = escape_markdown(
-                app.get("description", "")
-            )
+            description = escape_markdown(app.get("description", ""))
 
-            # 预览图：支持 preview 字段
-            preview = app.get("preview", "")
+            # 预览图：允许为空
+            preview = app.get("preview")
             if preview:
                 preview = f"![预览图]({preview})"
             else:
                 preview = "-"
 
-            # 平台链接
+            # 合并所有下载地址
             links = app.get("links", {})
-            platform_links = []
+            link_items = []
 
-            for link_type in PLATFORM_ORDER:
-                url = links.get(link_type)
+            for link_type, url in links.items():
+                if not url:
+                    continue
 
-                if url:
-                    link_name = LINK_NAMES[link_type]
-                    platform_links.append(
-                        f"[{link_name}]({url})"
-                    )
-                else:
-                    platform_links.append("-")
+                link_name = LINK_NAMES.get(link_type, link_type)
+                link_items.append(f"[{link_name}]({url})")
+
+            download_links = "<br>".join(link_items) if link_items else "-"
 
             row = [
                 str(index),
                 name,
                 preview,
-                *platform_links,
+                download_links,
                 description or "-",
             ]
 
-            # 避免单元格中的 | 破坏表格结构
-            row = [
-                escape_markdown(value)
-                if value != preview
-                else value
-                for value in row
-            ]
+            # 转义普通文本列，保留 Markdown 图片和链接语法
+            row[1] = escape_markdown(row[1])
+            row[4] = escape_markdown(row[4])
 
             lines.append("| " + " | ".join(row) + " |")
 
