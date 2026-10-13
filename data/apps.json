@@ -28,6 +28,15 @@
         "source": "https://github.com/DK3369/movie",
         "android": "https://www.pgyer.com/Mj9vBT8g"
       }
+    },
+    {
+      "name": "Han1meViewer",
+      "preview": "https://github.com/misaka10032w/Han1meViewer/raw/main/readme_01.png",
+      "description": "Han1meViewer 是一个使用 Kotlin 开发的 Android 客户端，用于浏览、搜索、播放和管理 hanime 相关公开视频页面内容。",
+      "links": {
+        "source": "https://github.com/misaka10032w/Han1meViewer",
+        "android": "https://github.com/misaka10032w/Han1meViewer/releases/download/v1.1.0-release%2B26093012/Han1meViewer_v1.1.0-release+26093012.apk"
+      }
     }
   ],
   "Images": [
