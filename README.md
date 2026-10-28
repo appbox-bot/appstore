@@ -21,4 +21,10 @@
 | 1 | ACG HD | - | [Android](https://www.pgyer.com/RNxAzEK2) | 二次元壁纸聚合app，涵盖了外网主流站点图片 |
 | 2 | Shaft | ![预览图](https://github.com/CeuiLiSA/Pixiv-Shaft/blob/classic/snap/pixshaft/frames/home.webp) | [Source](https://github.com/CeuiLiSA/Pixiv-Shaft)<br>[Android](https://github.com/CeuiLiSA/Pixiv-Shaft/releases/download/v4.9.8/PixShaft_4.9.8_classic.apk) | PixShaft（Shaft） 是一个开源的 Pixiv 第三方安卓客户端：插画 · 漫画 · 小说 · 排行榜 · FANBOX · pixiv COMIC，流畅、Material You —— 能想到的体验都在这里。 |
 
+## Games
+
+| 序号 | 应用名称 | 预览图 | 下载地址 | 描述 |
+| --- | --- | --- | --- | --- |
+| 1 | itch | ![预览图](https://static.itch.io/images/app/collections@2x.png) | [pc](https://itch.io/app) | itch.io 集合了你能在互联网上找到的最为独特、最为有趣且最为独立的创作内容。我们并不是普通的数字商城平台，我们为你提供大量的收费与免费内容，并鼓励你到处逛一逛，看看你能发现些什么。 |
+
 <!-- APP_LIST_END -->
