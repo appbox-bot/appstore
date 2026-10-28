@@ -56,5 +56,15 @@
         "android": "https://github.com/CeuiLiSA/Pixiv-Shaft/releases/download/v4.9.8/PixShaft_4.9.8_classic.apk"
       }
     }
+  ],
+  "Games": [
+    {
+      "name": "itch",
+      "preview": "https://static.itch.io/images/app/collections@2x.png",
+      "description": "itch.io 集合了你能在互联网上找到的最为独特、最为有趣且最为独立的创作内容。我们并不是普通的数字商城平台，我们为你提供大量的收费与免费内容，并鼓励你到处逛一逛，看看你能发现些什么。",
+      "links": {
+        "pc": "https://itch.io/app"
+      }
+    }
   ]
 }
