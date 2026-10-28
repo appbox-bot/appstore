@@ -19,5 +19,6 @@
 | 序号 | 应用名称 | 预览图 | 下载地址 | 描述 |
 | --- | --- | --- | --- | --- |
 | 1 | ACG HD | - | [Android](https://www.pgyer.com/RNxAzEK2) | 二次元壁纸聚合app，涵盖了外网主流站点图片 |
+| 2 | Shaft | ![预览图](https://github.com/CeuiLiSA/Pixiv-Shaft/blob/classic/snap/pixshaft/frames/home.webp) | [Source](https://github.com/CeuiLiSA/Pixiv-Shaft)<br>[Android](https://github.com/CeuiLiSA/Pixiv-Shaft/releases/download/v4.9.8/PixShaft_4.9.8_classic.apk) | PixShaft（Shaft） 是一个开源的 Pixiv 第三方安卓客户端：插画 · 漫画 · 小说 · 排行榜 · FANBOX · pixiv COMIC，流畅、Material You —— 能想到的体验都在这里。 |
 
 <!-- APP_LIST_END -->
