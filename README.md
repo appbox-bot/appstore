@@ -25,6 +25,7 @@
 
 | 序号 | 应用名称 | 预览图 | 下载地址 | 描述 |
 | --- | --- | --- | --- | --- |
-| 1 | itch | ![预览图](https://static.itch.io/images/app/collections@2x.png) | [pc](https://itch.io/app) | itch.io 集合了你能在互联网上找到的最为独特、最为有趣且最为独立的创作内容。我们并不是普通的数字商城平台，我们为你提供大量的收费与免费内容，并鼓励你到处逛一逛，看看你能发现些什么。 |
+| 1 | itch | ![预览图](https://static.itch.io/images/app/collections@2x.png) | [PC](https://itch.io/app) | itch.io 集合了你能在互联网上找到的最为独特、最为有趣且最为独立的创作内容。我们并不是普通的数字商城平台，我们为你提供大量的收费与免费内容，并鼓励你到处逛一逛，看看你能发现些什么。 |
+| 2 | MTool | - | [PC](https://mtool.app/) | 玩家专属的游戏翻译与修改工具。只需将游戏启动exe文件拖入软件，即可操作翻译等功能 |
 
 <!-- APP_LIST_END -->
