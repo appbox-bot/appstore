@@ -12,7 +12,7 @@
 | 2 | 蜜桃圈 | - | [Android](https://codeberg.org/pancloud/apk/raw/branch/main/peachporn.apk) | 外网福利视频合集app，onlyfans、twitter等 |
 | 3 | 云影视 | - | [Android](https://codeberg.org/pancloud/apk/raw/branch/main/%E4%BA%91%E5%BD%B1%E8%A7%86.apk) | 在线视频app，涵盖各大网盘超清视频资源，绕过会员网速限制，需要登录自己的网盘账号 |
 | 4 | yoyo | - | [Source](https://github.com/DK3369/movie)<br>[Android](https://www.pgyer.com/Mj9vBT8g) | 聚合视频app，在开源库基础上增加了原生播放器和广告过滤，支持自行配置播放资源 |
-| 5 | Han1mePlus | ![预览图](https://github.com/misaka10032w/Han1meViewer/raw/main/readme_01.png) | [Source](https://github.com/1wc10086/Han1mePlus)<br>[Android](https://github.com/1wc10086/Han1mePlus/releases)<br>[iOS](https://github.com/1wc10086/Han1mePlus/releases)<br>[MacOS](https://github.com/1wc10086/Han1mePlus/releases)<br>[Windows](https://github.com/1wc10086/Han1mePlus/releases)<br>[Linux](https://github.com/1wc10086/Han1mePlus/releases) | Han1mePlus 是一个基于 Flutter 开发的 Hanime1 第三方客户端，采用 Material Design 3 设计规范，致力于提供现代化、极度流畅的观看体验。 |
+| 5 | Han1mePlus | - | [Source](https://github.com/1wc10086/Han1mePlus)<br>[Android](https://github.com/1wc10086/Han1mePlus/releases)<br>[iOS](https://github.com/1wc10086/Han1mePlus/releases)<br>[MacOS](https://github.com/1wc10086/Han1mePlus/releases)<br>[Windows](https://github.com/1wc10086/Han1mePlus/releases)<br>[Linux](https://github.com/1wc10086/Han1mePlus/releases) | Han1mePlus 是一个基于 Flutter 开发的 Hanime1 第三方客户端，采用 Material Design 3 设计规范，致力于提供现代化、极度流畅的观看体验。 |
 
 ## Images
 
