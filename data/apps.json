@@ -31,7 +31,6 @@
     },
     {
       "name": "Han1mePlus",
-      "preview": "https://github.com/misaka10032w/Han1meViewer/raw/main/readme_01.png",
       "description": "Han1mePlus 是一个基于 Flutter 开发的 Hanime1 第三方客户端，采用 Material Design 3 设计规范，致力于提供现代化、极度流畅的观看体验。",
       "links": {
         "source": "https://github.com/1wc10086/Han1mePlus",
